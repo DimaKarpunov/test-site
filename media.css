@@ -1,0 +1,838 @@
+
+/**
+ * 15.0 Media Queries
+ */
+
+/*
+ * Вставить в заголовок <meta name="viewport" content="width=device-width"> или <meta name=viewport content="width=700">
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+
+/*----------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+  .banner {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+  }
+
+  .tabs-inner {
+    margin-top: 70px;
+    padding: 15px 15px;
+  }
+
+  .tabs-item.item-active::after {
+    width: 115%;
+    left: -15px;
+    bottom: -17px;
+  }
+
+  .tabs-number {
+    margin-right: 20px;
+  }
+
+  /* Reviews */
+
+  .rewiews {
+    justify-content: center;
+  }
+
+  .review-img {
+    min-height: 150px;
+    max-width: 250px;
+  }
+
+  .reviews-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .reviews-text {
+    font-size: 12px;
+  }
+
+  .reviews-content {
+    bottom: 100px;
+    left: 35px;
+  }
+
+  .reviews-content_right {
+    right: 65px;
+  }
+
+  .review-img {
+    margin-left: -30px;
+  }
+
+  .author-img {
+    margin-right: 20px;
+  }
+
+  /* /Reviews */
+
+  /* Search */
+  .search-left {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .search-content {
+    margin-right: 30px;
+  }
+
+  .search-right {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .block-search {
+    margin-right: 5px;
+    padding: 0 10px;
+  }
+
+
+  .block-search_right {
+    margin-left: 15px;
+  }
+
+  /* /Search */
+
+  .img-text {
+    margin-right: 10px;
+  }
+
+}
+
+/*----------------------------------------------*/
+
+
+
+@media (max-width: 990px) {
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .nav {
+    font-size: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    order: 3;
+  }
+
+  .nav-link {
+    padding: 0 10px;
+  }
+
+  .btn {
+    margin-left: 100px;
+    order: 2;
+  }
+
+  /* /Header */
+
+  /* Banner */
+
+  .banner {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 15px;
+  }
+
+  .banner-title {
+    font-size: 37px;
+  }
+
+  .banner-title span {
+    font-size: 29px;
+  }
+
+  .banner-btn {
+    font-size: 13px;
+    padding: 10px 35px;
+  }
+
+  /* /Banner */
+
+  /* Intro */
+
+    .intro {
+      padding: 35px 0;
+    }
+
+    .intro-img {
+      margin-bottom: 20px;
+    }
+
+    .intro-title {
+      font-size: 25px;
+      margin-bottom: 35px;
+    }
+
+    .intro-text {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+   /* /Intro */
+
+  /* Tabs */
+
+  .tabs-inner {
+    padding: 0 20px 30px;
+    margin-bottom: 45px;
+  }
+
+  .tabs-number {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-right: 15px;
+  }
+
+  .tabs-title {
+    font-size: 30px;
+  }
+
+
+  .tabs-footer {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tabs-img {
+    width: 51%;
+    margin-bottom: 20px;
+  }
+
+  .tabs-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+   /* /Tabs */
+
+   /* Search */
+  .search-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .block-search_right {
+    margin-right: 80px;
+  }
+
+  /* /Search */
+
+  /* Projects */
+  .projects {
+    padding: 20px 30px;
+  }
+
+  .projects-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .projects-text {
+    font-size: 13px;
+  }
+
+  .projects-btn {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  /* /Projects */
+
+  /* Cards */
+  .cards {
+    justify-content: center;
+  }
+
+  .cards-item {
+    margin-bottom: 30px;
+    width: 51%;
+    height: 620px;
+  }
+
+  .cards-title {
+    font-size: 20px;
+  }
+
+  .cards-text {
+    font-size: 18px;
+  }
+
+  .cards-border {
+    margin-bottom: 20px;
+  }
+
+  .img-text {
+    bottom: 24px;
+    left: 180px;
+  }
+   /* Cards */
+
+   /* Community */
+    .community-content {
+      padding-top: 20px;
+    }
+
+   .community-header {
+    margin-bottom: 30px;
+  }
+
+    .community-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .community-text {
+      font-size: 15px;
+      margin-top: 30px;
+    }
+
+   /* /Community */
+
+   /* Reviews */
+
+   .reviews{
+     margin-top: 10px;
+     padding-bottom: 15px;
+     justify-content: center;
+   }
+
+   .reviews-left {
+    width: 51%;
+    margin-bottom: 30px;
+   }
+
+   .reviews-content {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    position: absolute;
+    bottom: 395px;
+    left: 190px;
+    z-index: 1;
+  }
+
+  .reviews-content_right {
+    width: 100%;
+    max-width: 360px;
+    position: absolute;
+    bottom: 130px;
+    right: 190px;
+    z-index: 1;
+  }
+
+   .reviews-right {
+     width: 50%;
+   }
+
+   /* /Reviews */
+
+  /* Footer */
+   .footer-partners {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    padding: 10px 0;
+  }
+
+  /* /Footer */
+}
+
+
+
+
+/*----------------------------------------------*/
+@media (max-width:769px) {
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .nav {
+    font-size: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    order: 3;
+  }
+
+  .nav-link {
+    padding: 0 10px;
+  }
+
+  .btn {
+    margin-left: 100px;
+    order: 2;
+  }
+
+  /* /Header */
+
+  /* Banner */
+
+  .banner {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 15px;
+  }
+
+  .banner-title {
+    font-size: 37px;
+  }
+
+  .banner-title span {
+    font-size: 29px;
+  }
+
+  .banner-btn {
+    font-size: 13px;
+    padding: 10px 35px;
+  }
+
+  /* /Banner */
+
+  /* Intro */
+
+    .intro {
+      padding: 35px 0;
+    }
+
+    .intro-img {
+      margin-bottom: 20px;
+    }
+
+    .intro-title {
+      font-size: 25px;
+      margin-bottom: 35px;
+    }
+
+    .intro-text {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+   /* /Intro */
+
+  /* Tabs */
+
+  .tabs {
+    padding-top: 0px;
+  }
+
+  .tabs-inner {
+    padding: 0 20px 20px;
+    margin-bottom: 45px;
+  }
+
+  .tabs-number {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-right: 10px;
+  }
+
+  .tabs-title {
+    font-size: 30px;
+  }
+
+  .tabs-item.item-active::after {
+    bottom: -20px;
+  }
+
+
+  .tabs-footer {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tabs-img {
+    width: 51%;
+    margin-bottom: 20px;
+  }
+
+  .tabs-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+   /* /Tabs */
+
+   /* Search */
+  .search-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .block-search_right {
+    margin-right: -20px;
+  }
+
+  /* /Search */
+
+  /* Projects */
+  .projects {
+    padding: 20px 30px;
+  }
+
+  .projects-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .projects-text {
+    font-size: 13px;
+  }
+
+  .projects-btn {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  /* /Projects */
+
+  /* Cards */
+  .cards {
+    justify-content: center;
+  }
+
+  .cards-item {
+    margin-bottom: 30px;
+    width: 51%;
+    height: 620px;
+  }
+
+  .cards-title {
+    font-size: 20px;
+  }
+
+  .cards-text {
+    font-size: 18px;
+  }
+
+  .cards-border {
+    margin-bottom: 20px;
+  }
+
+  .img-text {
+    bottom: 24px;
+    left: 180px;
+  }
+   /* Cards */
+
+   /* Community */
+    .community-content {
+      padding-top: 20px;
+    }
+
+   .community-header {
+    margin-bottom: 30px;
+  }
+
+    .community-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .community-text {
+      font-size: 15px;
+      margin-top: 30px;
+    }
+
+   /* /Community */
+
+   /* Reviews */
+
+   .reviews{
+     margin-top: 10px;
+     padding-bottom: 15px;
+     justify-content: center;
+   }
+
+   .reviews-left {
+    width: 51%;
+    margin-bottom: 30px;
+   }
+
+   .reviews-content {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    position: absolute;
+    bottom: 370px;
+    left: 190px;
+    z-index: 1;
+  }
+
+  .reviews-content_right {
+    width: 100%;
+    max-width: 360px;
+    position: absolute;
+    bottom: 120px;
+    right: 200px;
+    z-index: 1;
+  }
+
+   .reviews-right {
+     width: 50%;
+   }
+
+   /* /Reviews */
+
+  /* Footer */
+   .footer-partners {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    padding: 10px 0;
+  }
+
+  /* /Footer */
+}
+/*----------------------------------------------*/
+@media (max-width:479px) {
+
+  /* Banner */
+
+  .banner-title {
+    font-size: 45px;
+  }
+
+  .banner-title span {
+    font-size: 39px;
+  }
+
+  .banner-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
+
+  /* /Banner */
+
+  /* Intro */
+
+  .intro-title {
+    font-size: 25px;
+  }
+
+  .intro-text {
+    font-size: 13px;
+  }
+
+
+  /* /Intro */
+
+  /* Tabs */
+
+  .tabs-inner {
+    border: none;
+  }
+
+  .tabs-item {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e6e6e6;
+  }
+
+  .tabs-item.item-active::after {
+    bottom: -2px;
+  }
+
+  tabs-images {
+    width: 120px;
+  }
+
+  .tabs-number {
+    line-height: 2;
+  }
+
+  .tabs-content_title {
+    font-size: 20px;
+  }
+
+  .tabs-content_text {
+    font-size: 14px;
+  }
+
+  /* /Tabs */
+
+  /* Search */
+  .block-search {
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .search-images {
+    display: none;
+  }
+
+  .search-content {
+    text-align: center;
+  }
+
+  .search-text {
+    margin-bottom: 50px;
+  }
+
+  /* /Search */
+
+  /* Projects */
+
+  .projects-inner {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .projects-btn {
+    margin-top: 20px;
+    text-align: center;
+    padding: 7px 5px;
+  }
+
+  /* /Projects */
+
+  /* Cards */
+
+  .cards-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-text {
+    text-align: center;
+    padding: 10px;
+    right: 10px;
+  }
+
+  /* /Cards */
+
+  /* Community */
+
+  .community-header {
+    margin-bottom: 40px;
+  }
+
+  .community-title {
+    font-size: 25px;
+  }
+
+  .community-text {
+    font-size: 15px;
+  }
+
+  /* /Community */
+
+  /* Reviews */
+
+  .review-img {
+    min-height: 150px;
+    max-width: 250px;
+  }
+
+  .reviews-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .reviews-text {
+    font-size: 12px;
+  }
+
+  .reviews-content {
+    bottom: 380px;
+    left: 15px;
+  }
+
+  .reviews-content_right {
+    right: 10px;
+  }
+
+  .review-img {
+    margin-left: -30px;
+  }
+
+  .author-img {
+    margin-left: -5px;
+    margin-right: 20px;
+  }
+
+  /* /Reviews */
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+@media  (max-width:414px) {
+  .reviews-content_right {
+    right: 10px;
+  }
+}
+
+@media (max-width:321px) {
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-title span {
+    font-size: 28px;
+  }
+
+  .banner-btn {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+
+  .img-text {
+    font-size: 14px;
+    left: 120px;
+  }
+  .reviews-content_right {
+    right: -20px;
+  }
+}
